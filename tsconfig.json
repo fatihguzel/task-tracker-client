@@ -1,5 +1,9 @@
 {
   "compilerOptions": {
+    "target": "ES6",
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -22,5 +26,11 @@
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
+  "noUnusedLocals": true,
+  "noImplicitAny": true,
+  "noImplicitThis": true,
+  "strictNullChecks": true,
+  "downlevelIteration": true,
+  "types": ["node", "jest", "webpack-env"]
 }
