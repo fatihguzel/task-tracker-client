@@ -8,7 +8,7 @@ export default function Layout({
 }) {
   return (
     <section>
-      <HomeLayout children={children} />
+      <HomeLayout>{children}</HomeLayout>
     </section>
   );
 }

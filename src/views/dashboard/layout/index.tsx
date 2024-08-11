@@ -25,7 +25,11 @@ import { useNotification } from "@/hooks/useNotification";
 
 const { Header, Content, Footer } = Layout;
 
-const HomeLayout: React.FC<{ children?: React.ReactNode }> = ({ children }) => {
+interface HomeLayoutProps {
+  children?: React.ReactNode;
+}
+
+const HomeLayout = ({ children: child }: HomeLayoutProps) => {
   const { user } = useAppSelector((state) => state.auth);
 
   const dispatch = useAppDispatch();
@@ -212,7 +216,7 @@ const HomeLayout: React.FC<{ children?: React.ReactNode }> = ({ children }) => {
             borderRadius: borderRadiusLG,
           }}
         >
-          {children}
+          {child}
         </div>
       </Content>
       <Footer style={{ textAlign: "center" }}>
