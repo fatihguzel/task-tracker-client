@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* globals.css */
+@import "~antd/dist/reset.css";
 
 /* :root {
   --foreground-rgb: 0, 0, 0;

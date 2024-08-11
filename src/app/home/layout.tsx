@@ -1,3 +1,4 @@
+"use client";
 import HomeLayout from "@/views/dashboard/layout";
 
 export default function Layout({
