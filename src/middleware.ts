@@ -1,11 +1,15 @@
 import { NextResponse, NextRequest } from "next/server";
 
 const getProfileData = async ({ authToken }: { authToken: any }) => {
-  const response = await fetch("http://localhost:3000/auth/profile", {
-    headers: {
-      Authorization: `Bearer ${authToken}`,
-    },
-  });
+  const response = await fetch(
+    process.env.API_URL + "/auth/profile" ||
+      "http://localhost:3000/api/auth/profile",
+    {
+      headers: {
+        Authorization: `Bearer ${authToken}`,
+      },
+    }
+  );
 
   const data = await response.json();
 
@@ -44,5 +48,5 @@ export async function middleware(req: NextRequest) {
 }
 
 export const middlewareConfig = {
-  matcher: ["/account/:path*", "/home/:path*"],
+  matcher: ["/home", "/account"],
 };

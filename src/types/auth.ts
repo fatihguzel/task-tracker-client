@@ -1,10 +1,10 @@
 export interface IAuth {
   id?: string;
-  email?: string;
-  password?: string;
-  role?: string;
-  username?: string;
-  createdAt?: Date;
-  deletedAt?: Date;
+  email?: string | null;
+  password?: string | null;
+  role?: string | null;
+  username?: string | null;
+  createdAt?: Date | null;
+  deletedAt?: Date | null;
   updatedAt?: Date;
 }

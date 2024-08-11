@@ -1,10 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
 import auth from "./reducers/auth/slice";
+import task from "./reducers/task/slice";
 
 export const makeStore = () => {
   return configureStore({
     reducer: {
       auth,
+      task,
     },
   });
 };
