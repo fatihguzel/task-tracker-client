@@ -40,9 +40,9 @@ const Home: React.FC = () => {
               xs={24}
               sm={12}
               md={8}
-              lg={6}
+              lg={8}
               key={task.id}
-              className="flex flex-col"
+              className="flex flex-col w-full"
             >
               <Card
                 title={
@@ -53,7 +53,7 @@ const Home: React.FC = () => {
                 }
                 bordered={true}
                 extra={<Text type="secondary">{task.status}</Text>}
-                className="rounded-lg hover:shadow-lg transition-shadow duration-300 ease-in-out bg-white p-4 flex-1 flex flex-col justify-between h-full"
+                className="rounded-lg hover:shadow-lg transition-shadow duration-300 ease-in-out bg-white p-4 flex-1 flex flex-col justify-between h-full w-full"
               >
                 <p>{task.description}</p>
                 <Progress

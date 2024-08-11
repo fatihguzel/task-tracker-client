@@ -8,8 +8,8 @@ import {
 import React from "react";
 
 export type Route = {
-  path: string;
-  label: string;
+  path?: string;
+  label?: string;
   breadcrumb?: string;
   children?: Route[];
   icon?: React.ElementType;
@@ -20,7 +20,6 @@ export const routes: Route[] = [
     path: "/",
     label: "Ana Sayfa",
     breadcrumb: "Ana Sayfa",
-    children: [],
     icon: HomeOutlined,
   },
   {
@@ -37,7 +36,6 @@ export const routes: Route[] = [
       {
         label: "Görev Ekle",
         path: "/home/task-manager/add",
-        children: [],
         icon: PlusOutlined,
       },
     ],

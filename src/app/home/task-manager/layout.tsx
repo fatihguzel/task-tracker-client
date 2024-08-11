@@ -5,7 +5,7 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: APP_CONFIG.APP_NAME + " - Task Manager",
+  title: APP_CONFIG.APP_NAME + " - Görev Yönetimi",
   description: "Task Tracker",
 };
 

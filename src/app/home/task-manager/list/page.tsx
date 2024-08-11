@@ -1,3 +1,5 @@
+import Home from "@/views/dashboard/tasks";
+
 export default function TaskManagerListPage() {
-  return <div>Task Manager List Page</div>;
+  return <Home />;
 }
