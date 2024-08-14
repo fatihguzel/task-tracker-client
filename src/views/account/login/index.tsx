@@ -22,11 +22,7 @@ const Login: React.FC = () => {
       Cookies.set("access_token", response.access_token, { expires: 7 });
       if (response.access_token) {
         setLoading(false);
-        // showNotification({
-        //   message: "Başarılı",
-        //   description: "Giriş başarılı bir şekilde gerçekleşti.",
-        //   type: "success",
-        // });
+
         notification.success({
           message: "Başarılı",
           description: "Giriş başarılı bir şekilde gerçekleşti.",
